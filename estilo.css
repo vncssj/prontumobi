@@ -91,6 +91,7 @@
         border-radius: 20px;
         padding: 10px;
         background-color: white;
+        margin-bottom: 25px;
 }
 .input-paciente{
         width: 50%;
@@ -124,4 +125,29 @@
         background-color: #FFC909;
         color: white;
         padding-left: 0px;
+}
+.pacientes{
+        width: 100%;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        text-align: left;
+        padding: 5px;
+}
+.icon-list{
+        padding: 5px;
+        border-radius: 50%;
+        background-color: #47B5BE;
+        color: white;
+        font-size: 10pt;
+}
+.icon-final{
+        margin-top: 6px;
+        float: right;
+        font-size: 8pt;
+}
+.verde{
+        color: green;
+}
+.vermelho{
+        color: red;
 }
