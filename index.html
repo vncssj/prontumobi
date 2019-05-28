@@ -31,11 +31,13 @@
             </div>
             <div id="erro">
                 <span id="msg-erro" class="text-danger centalizar"></span>
-                <div class="clearfix">&nbsp</div>
             </div>
-            <button class="btn btn-primary btn-login" id="entrar">ENTRAR</button>
-            <div class="clearfix">&nbsp</div>
-            <a href="cadastro.html" class="btn btn-primary btn-login">CADASTRE-SE</a>
+            <div class="control-btn-login">
+                <button class="btn btn-primary btn-login" id="entrar">ENTRAR</button>
+            </div>
+            <div class="control-btn-login">
+                <a href="cadastro.html" class="btn btn-primary btn-login">CADASTRE-SE</a>
+            </div>
         </div>
     </div>
 </body>
@@ -45,12 +47,20 @@
     $("#entrar").click(function () {
         let login = $("#login").val();
         let senha = $("#senha").val();
-        if (login != "admin" || senha != "admin") {
+        if (login == "" || senha == "") {
             $("#erro").show();
             $("#msg-erro").empty();
-            $("#msg-erro").append("Login ou senha inválidos, por favor tente novamente!");
-        }else{
-            window.location.href = "central.html";
+            $("#msg-erro").append("Por favor, preencha os campos de Login");
+
+        } else {
+            $("#erro").hide();
+            if (login != "admin" || senha != "admin") {
+                $("#erro").show();
+                $("#msg-erro").empty();
+                $("#msg-erro").append("Login ou senha inválidos, por favor tente novamente!");
+            } else {
+                window.location.href = "central.html";
+            }
         }
     });
 </script>
