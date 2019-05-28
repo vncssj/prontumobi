@@ -8,7 +8,8 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='css/bootstrap.min.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.js"></script>
 </head>
@@ -18,17 +19,21 @@
         <div class="col-xs-12 centralizar">
             <div class="form-login">
                 <div class="input-icon">
-                        <i class="fa fa-user"></i>
+                    <i class="fa fa-user"></i>
                 </div>
-                <input type="text" class="input-login" placeholder="USUÁRIO">
+                <input type="text" class="input-login" placeholder="USUÁRIO" id="login">
             </div>
             <div class="form-login">
                 <div class="input-icon">
                     <i class="fa fa-lock"></i>
                 </div>
-                <input type="password" class="input-login" placeholder="SENHA">
+                <input type="password" class="input-login" placeholder="SENHA" id="senha">
             </div>
-            <button class="btn btn-primary btn-login">ENTRAR</button>
+            <div id="erro">
+                <span id="msg-erro" class="text-danger centalizar"></span>
+                <div class="clearfix">&nbsp</div>
+            </div>
+            <button class="btn btn-primary btn-login" id="entrar">ENTRAR</button>
             <div class="clearfix">&nbsp</div>
             <a href="cadastro.html" class="btn btn-primary btn-login">CADASTRE-SE</a>
         </div>
@@ -36,3 +41,16 @@
 </body>
 
 </html>
+<script>
+    $("#entrar").click(function () {
+        let login = $("#login").val();
+        let senha = $("#senha").val();
+        if (login != "admin" || senha != "admin") {
+            $("#erro").show();
+            $("#msg-erro").empty();
+            $("#msg-erro").append("Login ou senha inválidos, por favor tente novamente!");
+        }else{
+            window.location.href = "central.html";
+        }
+    });
+</script>
