@@ -1,0 +1,268 @@
+.background{
+    background-color: #2babab;
+    height: 100vh;
+    width: 100vw;
+    padding: 20px;
+    padding-top: 40vh;
+}
+.centralizar{
+    align-content: center;
+    text-align: center;
+    align-items: center;
+justify-content: center;
+justify-items: center;
+justify-self: center;
+align-self: center;
+}
+.input-login{
+    border: 0px;
+    background-color: transparent;
+    text-align: center;
+    font-size: 14pt;
+    height: all;
+    width: 70%;
+}
+.input-icon{
+width: 20%;
+text-align: center;
+font-size: 15pt;
+color: white;
+}
+.form-login{
+    width: 80%;
+    display: flex;
+    text-align: start;
+    padding: 5px;
+    border: 2px white solid;
+    margin: 30px;
+    border-radius: 20px;
+}
+.btn-login{
+    font-size: 15pt;
+    border: 2px solid;
+    width: 80%;
+    border-radius: 20px;
+    border-color: white;
+}
+
+/*TELA DE CADASTRO*/
+.background-cadastro{
+    background-color: darkcyan;
+    height: 100vh;
+    width: 100vw;
+    padding: 20px;
+    padding-top: 40vh;
+}
+.input-cadastro{
+    font-weight: bolder;
+    color: white;
+    border: 0px;
+    background-color: transparent;
+    text-align: center;
+    font-size: 14pt;
+    height: all;
+    width: 100%;
+}
+.input-cadastro ::placeholder{
+    color: white;
+}
+.avancar{
+    color: white;
+    font-weight: bolder;
+    font-size: 14pt;
+    border-radius: 100px;
+}
+/*TELA DE CAMERA*/
+.background-cima{
+    display: flex;
+    background-color: darkcyan;
+    height: 30vh;
+    width: 100vw;
+    padding: 20px;
+}
+.background-baixo{
+    padding-top: 20px;
+    display: flex;
+}
+.camera {
+  width: 340px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5em;
+}
+.foto {
+  width: 300px;
+  height: 220px;
+  border: 0px solid black;
+  margin: 1em;
+}
+  .circulo-camera{
+      height: 200px;
+      width: 200px;
+      border-radius: 50%;
+      background-color: white;
+  }
+  #icon-camera{
+      margin-top: 25%;
+      color: darkcyan;
+      font-size: 40pt;
+      margin-bottom: 10px;
+  }
+  #add-foto{
+      font-size: 14pt;
+      font-weight: bolder;
+  }
+  .topo {
+    background-color: #007BA4;
+    min-height: 5vh;
+    padding: 5px;
+    font-size: 14pt;
+    color: white;
+}
+
+.centralizar {
+    text-align: center;
+    justify-content: center;
+}
+
+.header {
+    display: flex;
+    background-color: #47B5BE;
+    height: 20vh;
+}
+
+.half-header {
+    height: 100%;
+    width: 50%;
+    padding: 10px;
+}
+
+.redonda {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: white;
+    text-align: center;
+}
+
+#user-central {
+    top: 50%;
+    font-size: 50pt;
+    color: #47B5BE;
+}
+#dados{
+    padding-top: 20%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+#dados li{
+    color: gray;
+}
+.content{
+    margin-top: 2px;
+    background-color: #9BD7DB;
+    height: calc(75vh - 2px);
+    padding-top: 20%;
+}
+.btn-central{
+    margin-top: 20px;
+    background-color: #CDEBED;
+    width: 80%;
+    box-shadow: 4px 4px 4px -3px;
+    border: 0px solid;
+    color: gray;
+    font-size: 18pt;
+    padding: 10px;
+    padding-left: 20px;
+    text-align: start;
+}
+.btn-transparente{
+    background-color: transparent;
+    border: 2px #9BD7DB solid;
+    font-size: 8pt;
+    color: white;
+    border-radius: 50px;
+}
+.amarelo{
+    color: #FFC909;
+}
+.content-pacientes{
+    margin-top: 2px;
+    background-color: #75B7CD;
+    height: calc(95vh - 2px);
+    padding: 10px;
+    align-items: center;
+}
+.top-inputs{
+    display: flex;
+    width: 100%;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: white;
+    margin-bottom: 25px;
+}
+.input-paciente{
+    width: 50%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: lightgray;
+    border: 0px;
+    padding: 5px;
+    padding-left: 10px;
+}
+.search-paciente{
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: lightgray;
+    border: 0px;
+    width: 10%;
+}
+.add-paciente{
+    width: 35%;
+    border-radius: 20px;
+    background-color: transparent;
+    border: 0px;
+    float: right;
+}
+.icon-paciente{
+    background-color: #FFC909;
+    border-radius: 50%;
+    padding: 10px;
+}
+.add-paciente:hover{
+    background-color: #FFC909;
+    color: white;
+    padding-left: 0px;
+}
+.pacientes{
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: left;
+    padding: 5px;
+}
+.icon-list{
+    padding: 5px;
+    border-radius: 50%;
+    background-color: #47B5BE;
+    color: white;
+    font-size: 10pt;
+}
+.icon-final{
+    margin-top: 6px;
+    float: right;
+    font-size: 8pt;
+}
+.verde{
+    color: green;
+}
+.vermelho{
+    color: red;
+}
