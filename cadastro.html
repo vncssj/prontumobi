@@ -18,23 +18,50 @@
     <div class="background-cadastro">
         <div class="col-xs-12 centralizar">
             <div class="form-login">
-                <input type="text" class="input-cadastro" placeholder="Nome">
+                <input type="text" class="input-cadastro" id="nome" placeholder="Nome">
             </div>
             <div class="form-login">
-                <input type="text" class="input-cadastro" placeholder="E-mail">
+                <input type="text" class="input-cadastro" id="email" placeholder="E-mail">
             </div>
             <div class="form-login">
-                <input type="text" class="input-cadastro" placeholder="No CRM">
+                <input type="text" class="input-cadastro" id="crm" placeholder="No CRM">
             </div>
             <div class="form-login">
-                <input type="password" class="input-cadastro" placeholder="Senha">
+                <input type="password" class="input-cadastro" id="senha" placeholder="Senha">
             </div>
             <div class="form-login">
-                    <input type="password" class="input-cadastro" placeholder="Confirmar Senha">
-                </div>
-            <button class="btn btn-warning avancar"><i class="fa fa-arrow-right"></i></button>
+                <input type="password" class="input-cadastro" id="conf-senha" placeholder="Confirmar Senha">
+            </div>
+            <div class="text-danger" id="erro">
+                <div id="msg-erro"></div>
+            </div>
+            <div class="clearfix">&nbsp</div>
+            <button id="avancar" class=" btn btn-warning avancar"><i class="fa fa-arrow-right"></i></button>
         </div>
     </div>
 </body>
 
 </html>
+<script>
+    $("#avancar").click(function () {
+        let nome = $("#nome").val();
+        let email = $("#email").val();
+        let crm = $("#crm").val();
+        let senha = $("#senha").val();
+        let conf = $("#conf-senha").val();
+        if (nome == "" || email == "" || crm == "" || senha == "" || conf == "") {
+            $("#erro").show();
+            $("#erro").empty();
+            $("#erro").append("Nenhum campo deve ficar vazio!");
+        }
+        else {
+            if (senha != conf) {
+                $("#erro").show();
+                $("#erro").empty();
+                $("#erro").append("As senhas não conferem!");
+            } else {
+                window.location.href = "camera.html";
+            }
+        }
+    });
+</script>

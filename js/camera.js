@@ -1,20 +1,20 @@
 var video = document.querySelector('#video');
 
 var getUserMedia = (navigator.webkitGetUserMedia ||
-                       navigator.mozGetUserMedia ||
-                          navigator.msGetUserMedia).bind(navigator);
+  navigator.mozGetUserMedia ||
+  navigator.msGetUserMedia).bind(navigator);
 
 var mediaStream;
-function iniciaVideo (stream) {
+function iniciaVideo(stream) {
   video.srcObject = stream;
   mediaStream = stream;
 }
 
-function trataErroMedia (erro) {
+function trataErroMedia(erro) {
   console.error('Erro: ' + erro);
 }
 
-var configuracaoMedia = {video: {optional: [{maxWidth: 240},{maxHeight: 320}]}, audio: false};
+var configuracaoMedia = { video: { optional: [{ maxWidth: 240 }, { maxHeight: 320 }] }, audio: false };
 
 getUserMedia(configuracaoMedia, iniciaVideo, trataErroMedia);
 
@@ -39,4 +39,8 @@ botaoTiraFoto.addEventListener('click', function (e) {
     video.style.display = '';
     canvas.style.display = 'none';
   }
+  $(this).removeClass("btn-warning");
+  $(this).addClass("btn-success");
+  $("#pular-foto").hide();
+  $("#concluir-foto").show();
 });

@@ -27,12 +27,24 @@
             <canvas id="canvas" class="foto" style="display: none;"></canvas>
             <button id="tira-foto" class="btn btn-warning avancar"><i class="fa fa-check"></i></button>
         </div>
+    </div>
+    <div class="rodape-camera">
         <div class="col-xs-12">
-            <a href="">Pular</a>
+            <button class="btn btn-secondary" id="pular-foto">Pular</button>
+            <button class="btn btn-info" id="concluir-foto" style="display: none;">Concluir</button>
         </div>
     </div>
 </body>
 
 </html>
-<script src="js/camera.js">
+<script src="js/camera.js"></script>
+<script>
+    $("#pular-foto").click(function () {
+        alert("Cadastro realizado com sucesso!\nFaça o login para começar a usar nosso APP!");
+        window.location.href = "index.html";
+    });
+    $("#concluir-foto").click(function () {
+        alert("Cadastro realizado com sucesso!\nFaça o login para começar a usar nosso APP!");
+        window.location.href = "index.html";
+    });
 </script>

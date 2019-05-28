@@ -95,6 +95,7 @@
 .background-baixo {
     padding-top: 20px;
     display: flex;
+    height: 60vh;
 }
 
 .camera {
@@ -316,6 +317,14 @@
 
 .rodape-pacientes {
     height: 15vh;
+    width: 100vw;
+    background-color: #007BA4;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.rodape-camera {
+    height: 10vh;
     width: 100vw;
     background-color: #007BA4;
     text-align: center;
