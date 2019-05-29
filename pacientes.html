@@ -25,23 +25,23 @@
                         <button class="add-paciente"><i class="fa fa-plus icon-paciente"></i> Paciente</button>
                 </div>
                 <div class="col-xs-12">
-                        <button class="pacientes"><i class="fa fa-user icon-list"></i> João <i
+                        <button class="pacientes" url="joao"><i class="fa fa-user icon-list"></i> João <i
                                         class="fa fa-circle icon-final verde"></i></button>
                 </div>
                 <div class="col-xs-12">
-                        <button class="pacientes"><i class="fa fa-user icon-list"></i> Maria <i
+                        <button class="pacientes" url="maria"><i class="fa fa-user icon-list"></i> Maria <i
                                         class="fa fa-circle icon-final verde"></i></button>
                 </div>
                 <div class="col-xs-12">
-                        <button class="pacientes"><i class="fa fa-user icon-list"></i> Lúcia <i
+                        <button class="pacientes" url="lucia"><i class="fa fa-user icon-list"></i> Lúcia <i
                                         class="fa fa-circle icon-final vermelho"></i></button>
                 </div>
                 <div class="col-xs-12">
-                        <button class="pacientes"><i class="fa fa-user icon-list"></i> Fernanda <i
+                        <button class="pacientes" url="fernanda"><i class="fa fa-user icon-list"></i> Fernanda <i
                                         class="fa fa-circle icon-final verde"></i></button>
                 </div>
                 <div class="col-xs-12">
-                        <button class="pacientes"><i class="fa fa-user icon-list"></i> Miguel <i
+                        <button class="pacientes" url="miguel"><i class="fa fa-user icon-list"></i> Miguel <i
                                         class="fa fa-circle icon-final verde"></i></button>
                 </div>
         </div>
@@ -53,3 +53,9 @@
 </body>
 
 </html>
+<script>
+$(".pacientes").click(function(){
+        let url = $(this).attr("url");
+        window.location.href = "prontuario-"+url+".html";
+});
+</script>

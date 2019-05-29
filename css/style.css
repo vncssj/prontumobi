@@ -330,3 +330,11 @@
     text-align: center;
     padding-top: 10px;
 }
+.content-prontuarios {
+    overflow-y: auto;
+    margin-top: 2px;
+    background-color: #75B7CD;
+    height: calc(80vh - 2px);
+    padding: 10px;
+    align-items: center;
+}
