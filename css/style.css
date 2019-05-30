@@ -3,7 +3,6 @@
     height: 100vh;
     width: 100vw;
     padding: 20px;
-    padding-top: 40vh;
 }
 
 .centralizar {
@@ -57,7 +56,6 @@
     height: 100vh;
     width: 100vw;
     padding: 20px;
-    padding-top: 40%;
     overflow-y: auto;
 }
 
@@ -375,4 +373,19 @@
 a, a:hover {
     color: black;
     text-decoration: none;
+}
+
+.imagem {
+    width: 100%;
+    height: 40%;
+}
+
+.faixa {
+    height: auto;
+    border-radius: 30px;
+    background-color: #6EDBE4;
+    color: gray;
+    padding: 5px;
+    text-align: center;
+    font-size: 20pt;
 }
