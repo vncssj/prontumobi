@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Prontumobi</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/bootstrap.min.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+</head>
+
+<body>
+    <div class="topo centralizar">OCORRÊNCIAS</div>
+    <div class="content-pacientes centralizar">
+        <div class="topo-ocorrencias">
+            <span>SELECIONE O PACIENTE</span>
+            <select class="custom-select">
+                <option value="">SELECIONE</option>
+                <option value="">Fernanda</option>
+                <option value="">João</option>
+                <option value="">Lúcia</option>
+                <option value="">Miguel</option>
+                <option value="">Maria</option>
+            </select>
+        </div>
+        <textarea class="form-control text-ocorrencias" placeholder="Digite a ocorrência aqui!"></textarea>
+    </div>
+    <div class="rodape-pacientes">
+        <a href="pacientes.html" class="btn btn-warning avancar">
+            <i class="fa fa-check"></i>
+        </a>
+    </div>
+</body>
+
+</html>
+<script>
+    $(".pacientes").click(function () {
+        let url = $(this).attr("url");
+        window.location.href = "prontuario-" + url + ".html";
+    });
+</script>

@@ -29,7 +29,7 @@
     width: 20%;
     text-align: center;
     font-size: 15pt;
-    color: white;
+    color: #71DFE2;
 }
 
 .form-login {
@@ -37,7 +37,7 @@
     display: flex;
     text-align: start;
     padding: 5px;
-    border: 2px white solid;
+    border: 2px #71DFE2 solid;
     margin: 30px;
     border-radius: 20px;
 }
@@ -57,7 +57,8 @@
     height: 100vh;
     width: 100vw;
     padding: 20px;
-    padding-top: 40vh;
+    padding-top: 40%;
+    overflow-y: auto;
 }
 
 .input-cadastro {
@@ -333,6 +334,31 @@
 .content-prontuarios {
     overflow-y: auto;
     margin-top: 2px;
+    background-color: #75B7CD;
+    height: calc(80vh - 2px);
+    padding: 10px;
+    align-items: center;
+}
+.topo-ocorrencias{
+    display: flex;
+    font-size: 10pt;
+    align-items: center;
+}
+.topo-ocorrencias span{
+    width: 72%;
+    padding-right: 2px;
+}
+.text-ocorrencias{
+    margin-top: 5px;
+    text-align: center;
+    min-height: 50% !important;
+}
+.corpo-ajuda{
+    width: 100%;
+    height: 80%;
+    background-color: white;
+}
+.content-ajuda {
     background-color: #75B7CD;
     height: calc(80vh - 2px);
     padding: 10px;
