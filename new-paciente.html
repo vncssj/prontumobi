@@ -16,26 +16,15 @@
 </head>
 
 <body>
-    <div class="content-prontuarios centralizar">
-        <div class="topo centralizar">PACIENTES</div>
-        <div class="col-xs-12" style="padding: 5px;">
-            <button id="edit" class="btn btn-secondary" style="padding: 2px 5px; font-size: 10pt;" data-toggle="tooltip"
-                data-placement="left" title="Modo de Edição">
-                <i class="fas fa-pencil-alt"></i> Habilitar Edição
-            </button>
-            <button id="salvar" class="btn btn-success" style="display: none; padding: 2px 5px; font-size: 10pt;"
-                data-toggle="tooltip" data-placement="left" title="Salvar">
-                <i class="fas fa-save"></i> Salvar
-            </button>
-        </div>
+    <div class="topo centralizar">NOVO PACIENTE</div>
+    <div class="content-pacientes centralizar">
         <div class="col-auto">
             <label class="sr-only" for="inlineFormInputGroup"></label>
             <div class="input-group mb-2">
                 <div class="input-group-prepend">
                     <div class="input-group-text">Nome</div>
                 </div>
-                <input type="text" class="form-control pront-form" placeholder="Nome" value="Miguel Nicolal Colombo"
-                    disabled=true>
+                <input type="text" class="form-control pront-form" placeholder="Nome" value="">
             </div>
         </div>
         <div class="col-auto">
@@ -44,8 +33,7 @@
                 <div class="input-group-prepend">
                     <div class="input-group-text">Data de Abertura</div>
                 </div>
-                <input type="date" class="form-control pront-form" placeholder="Data de Abertura" value="2019-05-30"
-                    disabled=true>
+                <input type="date" class="form-control pront-form" placeholder="Data de Abertura" value="">
             </div>
         </div>
         <div class="col-auto">
@@ -54,8 +42,7 @@
                 <div class="input-group-prepend">
                     <div class="input-group-text">Data de Nascimento</div>
                 </div>
-                <input type="date" class="form-control pront-form" placeholder="Data de Nascimento" value="1989-04-26"
-                    disabled=true>
+                <input type="date" class="form-control pront-form" placeholder="Data de Nascimento" value="">
             </div>
         </div>
         <div class="col-auto">
@@ -64,7 +51,7 @@
                 <div class="input-group-prepend">
                     <div class="input-group-text">Sexo</div>
                 </div>
-                <select class="custom-select pront-form" disabled=true>
+                <select class="custom-select pront-form">
                     <option value="">Selecione o Sexo</option>
                     <option value="F">Feminino</option>
                     <option value="M" selected>Masculino</option>
@@ -77,8 +64,7 @@
                 <div class="input-group-prepend">
                     <div class="input-group-text">Telefone</div>
                 </div>
-                <input type="text" class="form-control pront-form" placeholder="Telefone" value="(71) 99999-0000"
-                    disabled=true>
+                <input type="number" class="form-control pront-form" placeholder="Telefone" value="">
             </div>
         </div>
         <div class="col-auto">
@@ -87,8 +73,7 @@
                 <div class="input-group-prepend">
                     <div class="input-group-text">Email</div>
                 </div>
-                <input type="text" class="form-control pront-form" placeholder="Email" value="miguelnicolombo@gmail.com"
-                    disabled=true>
+                <input type="text" class="form-control pront-form" placeholder="Email" value="">
             </div>
         </div>
         <div class="col-auto">
@@ -97,8 +82,7 @@
                 <div class="input-group-prepend">
                     <div class="input-group-text">Alergias</div>
                 </div>
-                <textarea type="text" class="form-control pront-form" placeholder="Alergias"
-                    disabled=true>Chocolate, Amendoin, Nozes e Abacaxi</textarea>
+                <textarea type="text" class="form-control pront-form" placeholder="Alergias"></textarea>
             </div>
         </div>
         <div class="col-auto">
@@ -107,8 +91,7 @@
                 <div class="input-group-prepend">
                     <div class="input-group-text">Sintomas</div>
                 </div>
-                <textarea type="text" class="form-control pront-form" placeholder="Sintomas"
-                    disabled=true>Coceira nos Olhos, Sonolência e Enjoos</textarea>
+                <textarea type="text" class="form-control pront-form" placeholder="Sintomas"></textarea>
             </div>
         </div>
         <div class="col-auto">
@@ -117,8 +100,7 @@
                 <div class="input-group-prepend">
                     <div class="input-group-text">Exames</div>
                 </div>
-                <textarea type="text" class="form-control pront-form" placeholder="Exames"
-                    disabled=true>Exame de Sangue</textarea>
+                <textarea type="text" class="form-control pront-form" placeholder="Exames"></textarea>
             </div>
         </div>
         <div class="col-auto">
@@ -127,8 +109,7 @@
                 <div class="input-group-prepend">
                     <div class="input-group-text">Prescrição Médica</div>
                 </div>
-                <textarea type="text" class="form-control pront-form" placeholder="Prescrição Médica"
-                    disabled=true>Repousar por 3 dias, e usar analgésico uma vez por dia</textarea>
+                <textarea type="text" class="form-control pront-form" placeholder="Prescrição Médica"></textarea>
             </div>
         </div>
         <div class="col-auto">
@@ -137,15 +118,14 @@
                 <div class="input-group-prepend">
                     <div class="input-group-text">Observações</div>
                 </div>
-                <textarea type="text" class="form-control pront-form" placeholder="Observações" value=""
-                    disabled=true></textarea>
+                <textarea type="text" class="form-control pront-form" placeholder="Observações" value=""></textarea>
             </div>
         </div>
     </div>
     <div class="rodape-pacientes">
-        <a href="central.html" class="btn btn-warning avancar">
-            <i class="fa fa-arrow-left"></i>
-        </a>
+        <button id="save-paciente" class="btn btn-warning avancar">
+            <i class="fa fa-check"></i>
+        </button>
     </div>
 </body>
 <div class="modal fade" id="modalAviso" tabindex="-1" role="dialog" aria-labelledby="modalAvisoLabel"
@@ -156,7 +136,7 @@
             </div>
             <div class="modal-body">
                 <div class="text-info centralizar">
-                    Dados alterados com Sucesso!
+                    Paciente Adicionado com Sucesso!
                     <div class="clearfix">&nbsp</div>
                     <a href="pacientes.html" class="btn btn-success btn-sm">Continuar</a>
                 </div>
@@ -167,6 +147,9 @@
 
 </html>
 <script>
+    $("#save-paciente").click(function () {
+        $("#modalAviso").modal("show");
+    });
     $(".pacientes").click(function () {
         let url = $(this).attr("url");
         window.location.href = "prontuario-" + url + ".html";
@@ -179,6 +162,7 @@
         $("#salvar").show();
     });
     $("#salvar").click(function () {
-        $("#modalAviso").modal("show");
+        alert("Dados salvos com sucesso!");
+        window.location.href = "pacientes.html"
     });
 </script>

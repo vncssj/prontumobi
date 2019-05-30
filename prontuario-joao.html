@@ -148,6 +148,22 @@
         </a>
     </div>
 </body>
+<div class="modal fade" id="modalAviso" tabindex="-1" role="dialog" aria-labelledby="modalAvisoLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header" style="border: 0px; padding: 0px;">
+            </div>
+            <div class="modal-body">
+                <div class="text-info centralizar">
+                    Dados alterados com Sucesso!
+                    <div class="clearfix">&nbsp</div>
+                    <a href="pacientes.html" class="btn btn-success btn-sm">Continuar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 </html>
 <script>
@@ -163,7 +179,6 @@
         $("#salvar").show();
     });
     $("#salvar").click(function () {
-        alert("Dados salvos com sucesso!");
-        window.location.href = "pacientes.html"
+        $("#modalAviso").modal("show");
     });
 </script>

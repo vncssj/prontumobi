@@ -22,7 +22,8 @@
                         <input type="text" class="input-paciente">
                         <button class="search-paciente"><i class="fa fa-search"></i></button>
                         <div style="width: 5%">&nbsp</div>
-                        <button class="add-paciente"><i class="fa fa-plus icon-paciente"></i> Paciente</button>
+                        <a href="new-paciente.html" class="add-paciente"><i class="fa fa-plus icon-paciente"></i>
+                                Paciente</a>
                 </div>
                 <div class="col-xs-12">
                         <button class="pacientes" url="joao"><i class="fa fa-user icon-list"></i> João <i
@@ -44,7 +45,7 @@
                         <button class="pacientes" url="miguel"><i class="fa fa-user icon-list"></i> Miguel <i
                                         class="fa fa-circle icon-final verde"></i></button>
                 </div>
-                
+
         </div>
         <div class="rodape-pacientes">
                 <a href="central.html" class="btn btn-warning avancar">
@@ -55,8 +56,8 @@
 
 </html>
 <script>
-$(".pacientes").click(function(){
-        let url = $(this).attr("url");
-        window.location.href = "prontuario-"+url+".html";
-});
+        $(".pacientes").click(function () {
+                let url = $(this).attr("url");
+                window.location.href = "prontuario-" + url + ".html";
+        });
 </script>

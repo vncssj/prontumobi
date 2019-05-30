@@ -31,16 +31,31 @@
         <textarea class="form-control text-ocorrencias" placeholder="Digite a ocorrência aqui!"></textarea>
     </div>
     <div class="rodape-pacientes">
-        <a href="pacientes.html" class="btn btn-warning avancar">
+        <button id="salvar" class="btn btn-warning avancar">
             <i class="fa fa-check"></i>
-        </a>
+        </button>
     </div>
 </body>
+<div class="modal fade" id="modalAviso" tabindex="-1" role="dialog" aria-labelledby="modalAvisoLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header" style="border: 0px; padding: 0px;">
+            </div>
+            <div class="modal-body">
+                <div class="text-info centralizar">
+                    Dados alterados com Sucesso!
+                    <div class="clearfix">&nbsp</div>
+                    <a href="pacientes.html" class="btn btn-success btn-sm">Continuar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 </html>
 <script>
-    $(".pacientes").click(function () {
-        let url = $(this).attr("url");
-        window.location.href = "prontuario-" + url + ".html";
+    $("#salvar").click(function () {
+        $("#modalAviso").modal("show");
     });
 </script>
