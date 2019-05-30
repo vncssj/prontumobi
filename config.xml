@@ -1,3 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.pgb.brewapp" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="https://phonegap.com/ns/1.0">
+	<name>Histomed</name>
+	<description>
+		This app have with objective, help seniors remember yours medical events.
+	</description>
+
 <feature name="Camera">
     <param name="android-package" value="org.apache.cordova.camera.CameraLauncher" />
 </feature>
+	<author email="vncssj@gmail.com" href="https://www.prontumobi.000webhostapp.com">
+	   Vinícius de Jesus,
+	</author>
+	<icon src="logo.png" />
+</widget>
