@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Prontumobi</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/bootstrap.min.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/popper.min.js"></script>
+</head>
+
+<body>
+    <div class="content-prontuarios centralizar">
+        <div class="topo centralizar">PACIENTES</div>
+        <div class="col-xs-12" style="padding: 5px;">
+            <button id="edit" class="btn btn-secondary" style="padding: 2px 5px; font-size: 10pt;" data-toggle="tooltip"
+                data-placement="left" title="Modo de Edição">
+                <i class="fas fa-pencil-alt"></i> Habilitar Edição
+            </button>
+            <button id="salvar" class="btn btn-success" style="display: none; padding: 2px 5px; font-size: 10pt;"
+                data-toggle="tooltip" data-placement="left" title="Salvar">
+                <i class="fas fa-save"></i> Salvar
+            </button>
+        </div>
+        <div class="col-auto">
+            <label class="sr-only" for="inlineFormInputGroup"></label>
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                    <div class="input-group-text">Nome</div>
+                </div>
+                <input type="text" class="form-control pront-form" placeholder="Nome" value="Miguel Nicolal Colombo"
+                    disabled=true>
+            </div>
+        </div>
+        <div class="col-auto">
+            <label class="sr-only" for="inlineFormInputGroup"></label>
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                    <div class="input-group-text">Data de Abertura</div>
+                </div>
+                <input type="date" class="form-control pront-form" placeholder="Data de Abertura" value="2019-05-30"
+                    disabled=true>
+            </div>
+        </div>
+        <div class="col-auto">
+            <label class="sr-only" for="inlineFormInputGroup"></label>
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                    <div class="input-group-text">Data de Nascimento</div>
+                </div>
+                <input type="date" class="form-control pront-form" placeholder="Data de Nascimento" value="1989-04-26"
+                    disabled=true>
+            </div>
+        </div>
+        <div class="col-auto">
+            <label class="sr-only" for="inlineFormInputGroup"></label>
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                    <div class="input-group-text">Sexo</div>
+                </div>
+                <select class="custom-select pront-form" disabled=true>
+                    <option value="">Selecione o Sexo</option>
+                    <option value="F">Feminino</option>
+                    <option value="M" selected>Masculino</option>
+                </select>
+            </div>
+        </div>
+        <div class="col-auto">
+            <label class="sr-only" for="inlineFormInputGroup"></label>
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                    <div class="input-group-text">Telefone</div>
+                </div>
+                <input type="text" class="form-control pront-form" placeholder="Telefone" value="(71) 99999-0000"
+                    disabled=true>
+            </div>
+        </div>
+        <div class="col-auto">
+            <label class="sr-only" for="inlineFormInputGroup"></label>
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                    <div class="input-group-text">Email</div>
+                </div>
+                <input type="text" class="form-control pront-form" placeholder="Email" value="miguelnicolombo@gmail.com"
+                    disabled=true>
+            </div>
+        </div>
+        <div class="col-auto">
+            <label class="sr-only" for="inlineFormInputGroup"></label>
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                    <div class="input-group-text">Alergias</div>
+                </div>
+                <textarea type="text" class="form-control pront-form" placeholder="Alergias"
+                    disabled=true>Chocolate, Amendoin, Nozes e Abacaxi</textarea>
+            </div>
+        </div>
+        <div class="col-auto">
+            <label class="sr-only" for="inlineFormInputGroup"></label>
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                    <div class="input-group-text">Sintomas</div>
+                </div>
+                <textarea type="text" class="form-control pront-form" placeholder="Sintomas"
+                    disabled=true>Coceira nos Olhos, Sonolência e Enjoos</textarea>
+            </div>
+        </div>
+        <div class="col-auto">
+            <label class="sr-only" for="inlineFormInputGroup"></label>
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                    <div class="input-group-text">Exames</div>
+                </div>
+                <textarea type="text" class="form-control pront-form" placeholder="Exames"
+                    disabled=true>Exame de Sangue</textarea>
+            </div>
+        </div>
+        <div class="col-auto">
+            <label class="sr-only" for="inlineFormInputGroup"></label>
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                    <div class="input-group-text">Prescrição Médica</div>
+                </div>
+                <textarea type="text" class="form-control pront-form" placeholder="Prescrição Médica"
+                    disabled=true>Repousar por 3 dias, e usar analgésico uma vez por dia</textarea>
+            </div>
+        </div>
+        <div class="col-auto">
+            <label class="sr-only" for="inlineFormInputGroup"></label>
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                    <div class="input-group-text">Observações</div>
+                </div>
+                <textarea type="text" class="form-control pront-form" placeholder="Observações" value=""
+                    disabled=true></textarea>
+            </div>
+        </div>
+    </div>
+    <div class="rodape-pacientes">
+        <a href="central.html" class="btn btn-warning avancar">
+            <i class="fa fa-arrow-left"></i>
+        </a>
+    </div>
+</body>
+
+</html>
+<script>
+    $(".pacientes").click(function () {
+        let url = $(this).attr("url");
+        window.location.href = "prontuario-" + url + ".html";
+    });
+    $("#edit").click(function () {
+        $.each($(".pront-form"), function () {
+            $(this).attr("disabled", false);
+        });
+        $(this).hide();
+        $("#salvar").show();
+    });
+    $("#salvar").click(function () {
+        alert("Dados salvos com sucesso!");
+        window.location.href = "pacientes.html"
+    });
+</script>
